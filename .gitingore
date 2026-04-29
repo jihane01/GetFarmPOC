@@ -26,3 +26,7 @@ data/*.db
 # Local config
 config.local.py
 EOF
+# Gradio cache (important!)
+.gradio/
+gradio_cached_examples/
+cached_examples/
