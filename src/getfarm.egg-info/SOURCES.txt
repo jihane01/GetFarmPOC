@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/getfarm/__init__.py
+src/getfarm.egg-info/PKG-INFO
+src/getfarm.egg-info/SOURCES.txt
+src/getfarm.egg-info/dependency_links.txt
+src/getfarm.egg-info/requires.txt
+src/getfarm.egg-info/top_level.txt
+src/getfarm/api/__init__.py
+src/getfarm/api/main.py
+src/getfarm/core/__init__.py
+src/getfarm/core/risk.py

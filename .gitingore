@@ -1,0 +1,28 @@
+# uv generated .gitignore already includes this, but ensure:
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.env
+venv/
+.venv/
+env/
+ENV/
+
+# uv
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Data
+data/*.csv
+data/*.db
+
+# Local config
+config.local.py
+EOF

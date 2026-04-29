@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: getfarm
+Version: 0.1.0
+Summary: AI-powered pre-planting risk assessment for Moroccan farmers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: gradio>=4.8.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: httpx>=0.25.0
+
+# GetFarm: Pre-Planting Risk Assessment for Moroccan Farmers
+
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green.svg)](https://fastapi.tiangolo.com)
+[![Gradio](https://img.shields.io/badge/Gradio-4.8-orange.svg)](https://gradio.app)
+
+## Problem
+
+Moroccan farmers lose 5,000-10,000 MAD when they plant in drought years. No tool answers: *"Should I plant this season?"*
+
+## Solution
+
+GetFarm uses satellite data and weather forecasts to generate a risk score:
+- 🟢 **Green**: Plant now
+- 🟡 **Yellow**: Delay planting
+- 🔴 **Red**: Do not plant
+
+## Live Demo
+
+[Deploy to Hugging Face Spaces here]
+
+## Tech Stack
+
+- **Backend**: FastAPI (Python)
+- **Frontend**: Gradio
+- **Package Manager**: uv
+- **Deployment**: Hugging Face Spaces
+
+## Run Locally
+
+```bash
+# Clone repo
+git clone https://github.com/jihane01/GetFarmPOC.git
+cd GetFarmPOC
+
+# Install uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Install dependencies
+uv sync
+
+# Run API (terminal 1)
+uv run getfarm-api
+
+# Run Gradio app (terminal 2)
+uv run getfarm-app
